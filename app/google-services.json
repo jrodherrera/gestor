@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "360237714170",
+    "project_id": "migestor-21",
+    "storage_bucket": "migestor-21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360237714170:android:b2b250873e6baf18995743",
+        "android_client_info": {
+          "package_name": "com.dam.migestor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "360237714170-81hqqvhlqf1ps69d1vmurh8pi2vq5nmj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlICVyp8c2efRO4V1vKmfCrVtO5lcGS24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "360237714170-81hqqvhlqf1ps69d1vmurh8pi2vq5nmj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
