@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.HomeActivity">
+    <!-- Definicion de guias para adaptar elementos -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/home_V_guide10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/home_V_guide90"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/home_H_guide10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/home_H_guide90"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9"/>
+<!--pie-->
+    <ImageView
+        android:id="@+id/home_IV_home"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleX="1.65"
+        android:scaleY="0.998"
+        android:src="@drawable/home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+<!--boton opciones-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/home_FBT_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:backgroundTint="@color/color_secondary_variant"
+        android:tint="@color/color_on_primary"
+        app:layout_constraintBottom_toTopOf="@+id/home_H_guide90"
+        app:layout_constraintEnd_toStartOf="@+id/home_V_guide90"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/home_V_guide10"
+        app:srcCompat="@drawable/ic_add" />
+<!--botones ocultos. configuracion-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/home_FBT_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        android:backgroundTint="@color/color_secondary_variant"
+        android:tint="@color/color_on_primary"
+        app:layout_constraintBottom_toTopOf="@+id/home_FBT_option"
+        app:layout_constraintStart_toStartOf="@+id/home_V_guide10"
+        app:srcCompat="@drawable/ic_setting" />
+    <!--botones ocultos. telefono-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/home_FBT_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        android:backgroundTint="@color/color_secondary_variant"
+        android:tint="@color/color_on_primary"
+        app:layout_constraintBottom_toTopOf="@+id/home_FBT_setting"
+        app:layout_constraintStart_toStartOf="@+id/home_V_guide10"
+        app:srcCompat="@drawable/ic_call" />
+    <!--botones ocultos. chat-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/home_FBT_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        android:backgroundTint="@color/color_secondary_variant"
+        android:tint="@color/color_on_primary"
+        app:layout_constraintBottom_toTopOf="@+id/home_FBT_phone"
+        app:layout_constraintStart_toStartOf="@+id/home_V_guide10"
+        app:srcCompat="@drawable/ic_chat" />
+    <!--botones ocultos. chat-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/home_FBT_terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        android:backgroundTint="@color/color_secondary_variant"
+        android:tint="@color/color_on_primary"
+        app:layout_constraintBottom_toTopOf="@+id/home_FBT_chat"
+        app:layout_constraintStart_toStartOf="@+id/home_V_guide10"
+        app:srcCompat="@drawable/ic_info" />
+<!--boton consultar -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/home_BTN_checkoperation"
+        android:layout_width="150dp"
+        android:layout_height="125dp"
+        android:layout_marginBottom="150dp"
+        android:autoSizeMaxTextSize="12dp"
+        android:textSize="12dp"
+        android:backgroundTint="@color/color_primary_variant"
+        android:text="@string/operation_check"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toTopOf="@id/home_H_guide90"
+        app:layout_constraintStart_toEndOf="@id/home_V_guide10"
+        app:layout_constraintEnd_toStartOf="@id/home_V_guide90"/>
+<!--boton iniciar -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/home_BTN_startoperation"
+        android:layout_width="150dp"
+        android:layout_height="125dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="12dp"
+        app:cornerRadius="12dp"
+        android:backgroundTint="@color/color_primary"
+        android:text="@string/operation_start"
+        app:layout_constraintBottom_toTopOf="@id/home_BTN_checkoperation"
+        app:layout_constraintStart_toEndOf="@id/home_V_guide10"
+        app:layout_constraintEnd_toStartOf="@id/home_V_guide90"/>
+<!--logo-->
+    <ImageView
+        android:id="@+id/home_IV_appicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logobigtransparent"
+        app:layout_constraintEnd_toEndOf="@+id/home_V_guide90"
+        app:layout_constraintStart_toStartOf="@+id/home_V_guide10"
+        app:layout_constraintTop_toTopOf="@+id/home_H_guide10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

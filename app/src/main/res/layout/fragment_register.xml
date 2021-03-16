@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.RegisterFragment">
+
+    <!-- Definicion de guias para adaptar elementos -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/register_V_guide10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/register_V_guide90"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/register_H_guide10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/register_H_guide90"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9"/>
+
+    <!--Best Practices: Creacion de elementos Down-up en Constrain Layout
+        Creación de elementos Material Design-->
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/register_BTN_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        app:cornerRadius="12dp"
+        app:icon="@drawable/ic_register"
+        android:text="@string/sign_in"
+        app:layout_constraintBottom_toTopOf="@id/register_H_guide90"
+        app:layout_constraintStart_toEndOf="@id/register_V_guide10"
+        app:layout_constraintEnd_toStartOf="@id/register_V_guide90"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/register_TIL_password2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/password_confirm"
+        app:errorEnabled="true"
+        app:layout_constraintStart_toEndOf="@id/register_V_guide10"
+        app:layout_constraintEnd_toStartOf="@id/register_V_guide90"
+        app:layout_constraintBottom_toTopOf="@+id/register_BTN_register"
+        android:layout_marginBottom="15dp"
+        app:endIconMode="password_toggle"
+        app:boxStrokeColor="@color/color_primary"
+        app:boxStrokeWidth="2dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_TIE_password2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/register_TIL_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/password_login"
+        app:errorEnabled="true"
+        app:layout_constraintStart_toEndOf="@id/register_V_guide10"
+        app:layout_constraintEnd_toStartOf="@id/register_V_guide90"
+        app:layout_constraintBottom_toTopOf="@+id/register_TIL_password2"
+        app:endIconMode="password_toggle"
+        app:boxStrokeColor="@color/color_primary"
+        app:boxStrokeWidth="2dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_TIE_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/register_TIL_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        app:errorEnabled="true"
+        app:layout_constraintStart_toEndOf="@id/register_V_guide10"
+        app:layout_constraintEnd_toStartOf="@id/register_V_guide90"
+        app:layout_constraintBottom_toTopOf="@+id/register_TIL_password"
+        app:endIconMode="clear_text"
+        app:boxStrokeColor="@color/color_primary"
+        app:boxStrokeWidth="2dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_TIE_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/register_TIL_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone"
+        app:errorEnabled="true"
+        app:layout_constraintStart_toEndOf="@id/register_V_guide10"
+        app:layout_constraintEnd_toStartOf="@id/register_V_guide90"
+        app:layout_constraintBottom_toTopOf="@+id/register_TIL_email"
+        app:endIconMode="clear_text"
+        app:boxStrokeColor="@color/color_primary"
+        app:boxStrokeWidth="2dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_TIE_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="phone"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Nombre usuario -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/register_TIL_user_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/login_user"
+        app:errorEnabled="true"
+        app:layout_constraintStart_toEndOf="@id/register_V_guide10"
+        app:layout_constraintEnd_toStartOf="@id/register_V_guide90"
+        app:layout_constraintBottom_toTopOf="@+id/register_TIL_phone"
+        app:endIconMode="clear_text"
+        app:boxStrokeColor="@color/color_primary"
+        app:boxStrokeWidth="2dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_TIE_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Imagen -->
+    <ImageView
+        android:id="@+id/register_IV_appicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logobigtransparent"
+        app:layout_constraintBottom_toTopOf="@+id/register_TIL_user_name"
+        app:layout_constraintEnd_toStartOf="@+id/register_V_guide90"
+        app:layout_constraintStart_toStartOf="@+id/register_V_guide10"
+        app:layout_constraintTop_toTopOf="@+id/register_H_guide10" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

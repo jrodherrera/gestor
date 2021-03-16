@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.terms.TermsActivity">
+
+    <!-- Definicion de guias para adaptar elementos -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/terms_V_guide10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/terms_V_guide90"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/terms_H_guide10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/terms_H_guide90"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <!--Pie -->
+    <ImageView
+        android:id="@+id/terms_IV_cars"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:src="@drawable/legal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--Boton aceptar -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/terms_BTN_agree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/color_share"
+        android:visibility="visible"
+        android:text="@string/agree"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/terms_H_guide90"
+        app:layout_constraintStart_toStartOf="@+id/terms_V_guide10" />
+    <!--Boton aceptar -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/terms_BTN_back"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/color_cancel"
+        android:text="@string/back"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toTopOf="@id/terms_H_guide90"
+        app:layout_constraintEnd_toStartOf="@+id/terms_V_guide90" />
+<!--texto aceptado-->
+    <TextView
+        android:id="@+id/terms_TV_agree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/terms_agree"
+        android:textColor="@color/color_share"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/terms_H_guide90"
+        app:layout_constraintEnd_toStartOf="@+id/terms_BTN_back"
+        app:layout_constraintStart_toStartOf="@+id/terms_V_guide10" />
+
+<!--texto terminos de uso-->
+    <ScrollView
+        android:id="@+id/terms_SV"
+        android:layout_width="309dp"
+        android:layout_height="369dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/terms_stroke"
+        android:fillViewport="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/terms_BTN_agree"
+        app:layout_constraintEnd_toStartOf="@+id/terms_V_guide90"
+        app:layout_constraintStart_toStartOf="@+id/terms_V_guide10">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/text_terms"
+                android:textColor="@color/color_primary"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </ScrollView>
+<!--titulo -->
+    <TextView
+        android:id="@+id/ok_doc_TV_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/title_terms"
+        android:textColor="@color/color_primary"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/terms_SV"
+        app:layout_constraintEnd_toStartOf="@+id/terms_V_guide90"
+        app:layout_constraintStart_toStartOf="@+id/terms_V_guide10"
+        app:layout_constraintTop_toBottomOf="@+id/terms_IV_appicon" />
+<!--logo-->
+    <ImageView
+        android:id="@+id/terms_IV_appicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logobigtransparent"
+        app:layout_constraintEnd_toStartOf="@+id/terms_V_guide90"
+        app:layout_constraintStart_toStartOf="@+id/terms_V_guide10"
+        app:layout_constraintTop_toTopOf="@+id/terms_H_guide10" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

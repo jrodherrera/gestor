@@ -1,0 +1,53 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+
+<!-- splash theme. -->
+    <style name="Base.MiGestor.SplashTheme">
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:navigationBarColor">@color/transparent</item>
+    </style>
+
+<!--Base application themeModificado segun standard de google-->
+    <style name="Base.MiGestor" parent="Theme.Base.MaterialThemeBuilder">
+<!--Colores-->
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryVariant">@color/color_primary_variant</item>
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/color_secondary</item>
+        <item name="colorSecondaryVariant">@color/color_secondary_variant</item>
+        <item name="colorOnSecondary">@color/color_on_secondary</item>
+        <!-- Background brand color. -->
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorOnBackground">@color/color_on_background</item>
+        <!-- Surface brand color. -->
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="colorOnSurface">@color/color_on_surface</item>
+        <!-- Error brand color. -->
+        <item name="colorError">@color/color_error</item>
+        <item name="colorOnError">@color/color_on_error</item>
+        <!-- Status bar color.
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>-->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <!--<item name="android:navigationBarDividerColor">@color/color_secondary_variant</item>-->
+
+<!-- Transiciones
+    Fuente: https://developer.android.com/training/transitions/start-activity-->
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowEnterTransition">@android:transition/explode</item>
+        <item name="android:windowExitTransition">@android:transition/explode</item>
+
+<!--Fuentes y tamaño -->
+        <item name="fontFamily">@font/minimo</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="Theme.Base.MaterialThemeBuilder" parent="Theme.MaterialComponents.DayNight.NoActionBar"></style>
+
+
+</resources>

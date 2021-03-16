@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    tools:context=".ui.onboarding.screens.ThirdScreen">
+    <!-- Definicion de guias para adaptar elementos -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/third_screen_V_guide10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/third_screen_V_guide90"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/third_screen_H_guide10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/third_screen_H_guide90"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9"/>
+
+    <TextView
+        android:id="@+id/third_screen_TVfinnish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/finnish"
+        android:textStyle="bold"
+        android:textColor="@color/color_primary"
+        app:layout_constraintBottom_toTopOf="@id/third_screen_H_guide90"
+        app:layout_constraintEnd_toEndOf="@id/third_screen_V_guide90"/>
+
+    <TextView
+        android:id="@+id/third_screen_TVabout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/text_third_screen"
+        android:textColor="@color/color_primary_variant"
+        app:layout_constraintBottom_toTopOf="@+id/third_screen_TVfinnish"
+        app:layout_constraintStart_toStartOf="@+id/third_screen_V_guide10"
+        app:layout_constraintEnd_toEndOf="@+id/third_screen_V_guide90"/>
+
+    <TextView
+        android:id="@+id/third_screen_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_third_screen"
+        android:textColor="@color/color_primary_variant"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/third_screen_TVabout"
+        app:layout_constraintEnd_toEndOf="@+id/third_screen_V_guide90"
+        app:layout_constraintStart_toStartOf="@+id/third_screen_V_guide10"
+        app:layout_constraintTop_toBottomOf="@+id/third_screen_IV" />
+
+    <ImageView
+        android:id="@+id/third_screen_IV"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/onboard2"
+        app:layout_constraintEnd_toEndOf="@+id/third_screen_V_guide90"
+        app:layout_constraintStart_toStartOf="@+id/third_screen_V_guide10"
+        app:layout_constraintTop_toTopOf="@+id/third_screen_H_guide10" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

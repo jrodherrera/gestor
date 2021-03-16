@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.operations.OperationsFragment">
+    <!--margen superior-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fragment_oper_H_guide10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"/>
+<!--Pie -->
+    <ImageView
+        android:id="@+id/transfer_IV_cars"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cars"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/oper_fragment_BTN_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/transfer_IV_cars"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/oper_fragment_IBTN_folder"
+        android:layout_width="150dp"
+        android:layout_height="127dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="59dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/transparent"
+        android:scaleX="0.55"
+        android:scaleY="0.55"
+        android:src="@drawable/folder"
+        app:layout_constraintBottom_toTopOf="@+id/oper_fragment_BTN_next"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/oper_fragment_IBTN_camera"
+        android:layout_width="173dp"
+        android:layout_height="146dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/transparent"
+        android:src="@drawable/camera"
+        app:layout_constraintBottom_toTopOf="@+id/oper_fragment_BTN_next"
+        app:layout_constraintStart_toStartOf="parent" />
+<!--titulo -->
+    <TextView
+        android:id="@+id/transfer_TV_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="string add file creado para esto"
+        android:textColor="@color/color_primary"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/oper_fragment_IBTN_camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!--logo -->
+    <ImageView
+        android:id="@+id/instruction_oper_IV_appicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logobigtransparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fragment_oper_H_guide10" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

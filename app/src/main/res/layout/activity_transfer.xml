@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.TransferActivity">
+
+    <!-- Definicion de guias para adaptar elementos -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/transfer_V_guide10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/transfer_V_guide90"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/transfer_H_guide10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/transfer_H_guide90"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9"/>
+
+<!--Pie -->
+    <ImageView
+        android:id="@+id/transfer_IV_cars"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cars"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+<!--Boton continuar -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/transfer_BTN_next"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/go"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toTopOf="@id/transfer_H_guide90"
+        app:layout_constraintStart_toEndOf="@id/transfer_V_guide10"
+        app:layout_constraintEnd_toStartOf="@id/transfer_V_guide90"/>
+<!--telefono -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/transfer_TIL_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone"
+        app:errorEnabled="true"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintStart_toEndOf="@id/transfer_V_guide10"
+        app:layout_constraintEnd_toStartOf="@id/transfer_V_guide90"
+        app:layout_constraintBottom_toTopOf="@+id/transfer_BTN_next"
+        app:endIconMode="clear_text"
+        app:errorIconDrawable="@drawable/ic_error"
+        app:boxStrokeColor="@color/color_primary"
+        app:boxStrokeWidth="2dp" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/transfer_TIE_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="phone" />
+    </com.google.android.material.textfield.TextInputLayout>
+<!--email -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/transfer_TIL_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        app:errorEnabled="true"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintStart_toEndOf="@id/transfer_V_guide10"
+        app:layout_constraintEnd_toStartOf="@id/transfer_V_guide90"
+        app:layout_constraintBottom_toTopOf="@+id/transfer_TIL_phone"
+        app:endIconMode="clear_text"
+        app:boxStrokeColor="@color/color_primary"
+        app:boxStrokeWidth="2dp" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/transfer_TIE_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+<!--texto -->
+    <TextView
+        android:id="@+id/transfer_TV_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fill_in_buyer"
+        android:textColor="@color/color_primary"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintStart_toEndOf="@id/transfer_V_guide10"
+        app:layout_constraintEnd_toStartOf="@id/transfer_V_guide90"
+        app:layout_constraintBottom_toTopOf="@+id/transfer_TIL_email"/>
+//identificador titularidad
+    <CheckBox
+        android:id="@+id/transfer_CHK_seller"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:textColor="@color/color_primary"
+        android:text="@string/seller"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@id/transfer_TV_txt"
+        app:layout_constraintStart_toEndOf="@id/transfer_V_guide10"
+        app:layout_constraintEnd_toStartOf="@id/transfer_V_guide90" />
+<!--titulo -->
+    <TextView
+        android:id="@+id/transfer_TV_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/color_primary"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/transfer_CHK_seller"
+        app:layout_constraintEnd_toStartOf="@+id/transfer_V_guide90"
+        app:layout_constraintStart_toStartOf="@+id/transfer_V_guide10" />
+ <!--logo-->
+    <ImageView
+        android:id="@+id/transfer_IV_appicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logobigtransparent"
+        app:layout_constraintEnd_toEndOf="@+id/transfer_V_guide90"
+        app:layout_constraintStart_toStartOf="@+id/transfer_V_guide10"
+        app:layout_constraintTop_toTopOf="@+id/transfer_H_guide10" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
