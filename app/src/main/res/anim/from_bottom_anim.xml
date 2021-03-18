@@ -5,8 +5,8 @@
 <set xmlns:android="http://schemas.android.com/apk/res/android" android:fillAfter="true">
     <translate
         android:duration="300"
-        android:fromYDelta="100%"
-        android:toYDelta="0%" />
+        android:fromXDelta="0%"
+        android:toXDelta="30%" />
     <scale
         android:pivotY="50%"
         android:pivotX="50%"

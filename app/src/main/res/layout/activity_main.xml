@@ -7,6 +7,17 @@
     android:background="@color/color_background"
     tools:context=".ui.MainActivity">
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_home_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/color_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/menu_operation"
+        android:visibility="gone" />
+
     <include layout="@layout/navhost_layout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

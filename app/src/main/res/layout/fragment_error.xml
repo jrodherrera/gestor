@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.ErrorDocActivity">
+    tools:context=".ui.ErrorFragment">
 
     <!-- Definicion de guias para adaptar elementos -->
     <androidx.constraintlayout.widget.Guideline
@@ -61,7 +61,7 @@
         app:cornerRadius="12dp"
         app:layout_constraintBottom_toTopOf="@id/error_doc_H_guide90"
         app:layout_constraintEnd_toStartOf="@+id/error_doc_V_guide90" />
-<!--texto -->
+    <!--texto -->
     <TextView
         android:id="@+id/error_doc_TV_txt"
         android:layout_width="wrap_content"
@@ -73,7 +73,7 @@
         app:layout_constraintBottom_toTopOf="@+id/error_doc_BTN_add"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-<!--titulo -->
+    <!--titulo -->
     <TextView
         android:id="@+id/error_doc_TV_title"
         android:layout_width="wrap_content"
@@ -87,7 +87,7 @@
         app:layout_constraintBottom_toTopOf="@+id/error_doc_TV_txt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-<!--icono error-->
+    <!--icono error-->
     <ImageView
         android:id="@+id/error_doc_IV_iconerror"
         android:layout_width="wrap_content"
@@ -97,7 +97,7 @@
         app:layout_constraintEnd_toStartOf="@+id/error_doc_V_guide90"
         app:layout_constraintStart_toStartOf="@+id/error_doc_V_guide10"
         app:layout_constraintTop_toTopOf="@+id/operations_H_guide10" />
-<!--logo-->
+    <!--logo-->
     <ImageView
         android:id="@+id/error_doc_IV_appicon"
         android:layout_width="wrap_content"

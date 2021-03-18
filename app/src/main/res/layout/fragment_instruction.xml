@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.instructions.InstructionsStartOperationActivity">
+    tools:context=".ui.instructions.InstructionFragment">
 
     <!-- Definicion de guias para adaptar elementos -->
     <androidx.constraintlayout.widget.Guideline
@@ -31,7 +31,7 @@
         android:layout_height="match_parent"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.9"/>
-<!--Pie -->
+    <!--Pie -->
     <ImageView
         android:id="@+id/instruction_oper_IV_cars"
         android:layout_width="0dp"
@@ -40,7 +40,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-<!--Boton continuar -->
+    <!--Boton continuar -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/instruction_oper_BTN_next"
         android:layout_width="0dp"
@@ -50,7 +50,7 @@
         app:layout_constraintBottom_toTopOf="@id/instruction_oper_H_guide90"
         app:layout_constraintStart_toEndOf="@id/instruction_oper_V_guide10"
         app:layout_constraintEnd_toStartOf="@id/instruction_oper_V_guide90"/>
-<!--Texto -->
+    <!--Texto -->
     <TextView
         android:id="@+id/instruction_oper_TV_about"
         android:layout_width="0dp"
@@ -62,7 +62,7 @@
         app:layout_constraintBottom_toTopOf="@+id/instruction_oper_BTN_next"
         app:layout_constraintStart_toEndOf="@+id/instruction_oper_V_guide10"
         app:layout_constraintEnd_toStartOf="@+id/instruction_oper_V_guide90"/>
-<!--titulo -->
+    <!--titulo -->
     <TextView
         android:id="@+id/instruction_oper_TV_title"
         android:layout_width="wrap_content"
@@ -77,7 +77,7 @@
         app:layout_constraintEnd_toStartOf="@+id/instruction_oper_V_guide90"
         app:layout_constraintStart_toEndOf="@+id/instruction_oper_V_guide10"
         app:layout_constraintTop_toBottomOf="@+id/first_screen_IV" />
-<!--logo -->
+    <!--logo -->
     <ImageView
         android:id="@+id/instruction_oper_IV_appicon"
         android:layout_width="wrap_content"

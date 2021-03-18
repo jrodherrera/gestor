@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.TransferActivity">
+    tools:context=".ui.TransferFragment">
 
     <!-- Definicion de guias para adaptar elementos -->
     <androidx.constraintlayout.widget.Guideline
@@ -32,7 +32,7 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.9"/>
 
-<!--Pie -->
+    <!--Pie -->
     <ImageView
         android:id="@+id/transfer_IV_cars"
         android:layout_width="0dp"
@@ -41,7 +41,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-<!--Boton continuar -->
+    <!--Boton continuar -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/transfer_BTN_next"
         android:layout_width="0dp"
@@ -51,7 +51,7 @@
         app:layout_constraintBottom_toTopOf="@id/transfer_H_guide90"
         app:layout_constraintStart_toEndOf="@id/transfer_V_guide10"
         app:layout_constraintEnd_toStartOf="@id/transfer_V_guide90"/>
-<!--telefono -->
+    <!--telefono -->
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:id="@+id/transfer_TIL_phone"
@@ -73,7 +73,7 @@
             android:layout_height="match_parent"
             android:inputType="phone" />
     </com.google.android.material.textfield.TextInputLayout>
-<!--email -->
+    <!--email -->
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:id="@+id/transfer_TIL_email"
@@ -94,7 +94,7 @@
             android:layout_height="match_parent"
             android:inputType="textEmailAddress"/>
     </com.google.android.material.textfield.TextInputLayout>
-<!--texto -->
+    <!--texto -->
     <TextView
         android:id="@+id/transfer_TV_txt"
         android:layout_width="0dp"
@@ -105,7 +105,7 @@
         app:layout_constraintStart_toEndOf="@id/transfer_V_guide10"
         app:layout_constraintEnd_toStartOf="@id/transfer_V_guide90"
         app:layout_constraintBottom_toTopOf="@+id/transfer_TIL_email"/>
-//identificador titularidad
+    //identificador titularidad
     <CheckBox
         android:id="@+id/transfer_CHK_seller"
         android:layout_width="0dp"
@@ -117,7 +117,7 @@
         app:layout_constraintBottom_toTopOf="@id/transfer_TV_txt"
         app:layout_constraintStart_toEndOf="@id/transfer_V_guide10"
         app:layout_constraintEnd_toStartOf="@id/transfer_V_guide90" />
-<!--titulo -->
+    <!--titulo -->
     <TextView
         android:id="@+id/transfer_TV_title"
         android:layout_width="wrap_content"
@@ -130,7 +130,7 @@
         app:layout_constraintBottom_toTopOf="@+id/transfer_CHK_seller"
         app:layout_constraintEnd_toStartOf="@+id/transfer_V_guide90"
         app:layout_constraintStart_toStartOf="@+id/transfer_V_guide10" />
- <!--logo-->
+    <!--logo-->
     <ImageView
         android:id="@+id/transfer_IV_appicon"
         android:layout_width="wrap_content"

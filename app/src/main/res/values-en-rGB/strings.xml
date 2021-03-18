@@ -63,4 +63,6 @@
     <string name="settings">USER SETTINGS</string>
     <string name="calling">TO CALL</string>
     <string name="empty_field">" This field must contain a value."</string>
+    <string name="title_check_oper">CHECK OPERATIONS</string>
+    <string name="title_terms">LEGAL TERMS</string>
 </resources>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.terms.TermsActivity">
+    tools:context=".ui.terms.TermsFragment">
 
     <!-- Definicion de guias para adaptar elementos -->
     <androidx.constraintlayout.widget.Guideline
@@ -60,15 +60,15 @@
         app:layout_constraintStart_toStartOf="@+id/terms_V_guide10" />
     <!--Boton aceptar -->
     <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.TextButton"
         android:id="@+id/terms_BTN_back"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/color_cancel"
         android:text="@string/back"
         app:cornerRadius="12dp"
         app:layout_constraintBottom_toTopOf="@id/terms_H_guide90"
         app:layout_constraintEnd_toStartOf="@+id/terms_V_guide90" />
-<!--texto aceptado-->
+    <!--texto aceptado-->
     <TextView
         android:id="@+id/terms_TV_agree"
         android:layout_width="0dp"
@@ -81,7 +81,7 @@
         app:layout_constraintEnd_toStartOf="@+id/terms_BTN_back"
         app:layout_constraintStart_toStartOf="@+id/terms_V_guide10" />
 
-<!--texto terminos de uso-->
+    <!--texto terminos de uso-->
     <ScrollView
         android:id="@+id/terms_SV"
         android:layout_width="309dp"
@@ -101,7 +101,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:text="@string/text_terms"
@@ -109,7 +109,7 @@
                 android:textSize="10dp" />
         </LinearLayout>
     </ScrollView>
-<!--titulo -->
+    <!--titulo -->
     <TextView
         android:id="@+id/ok_doc_TV_title"
         android:layout_width="wrap_content"
@@ -124,7 +124,7 @@
         app:layout_constraintEnd_toStartOf="@+id/terms_V_guide90"
         app:layout_constraintStart_toStartOf="@+id/terms_V_guide10"
         app:layout_constraintTop_toBottomOf="@+id/terms_IV_appicon" />
-<!--logo-->
+    <!--logo-->
     <ImageView
         android:id="@+id/terms_IV_appicon"
         android:layout_width="wrap_content"

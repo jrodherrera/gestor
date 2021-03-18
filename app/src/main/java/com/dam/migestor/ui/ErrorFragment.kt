@@ -1,4 +1,4 @@
-package com.dam.migestor.ui.operations
+package com.dam.migestor.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,8 +8,7 @@ import android.view.ViewGroup
 import com.dam.migestor.R
 
 
-class OperationsFragment : Fragment() {
-
+class ErrorFragment : Fragment() {
 
 
     override fun onCreateView(
@@ -17,7 +16,7 @@ class OperationsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_operations, container, false)
+        return inflater.inflate(R.layout.fragment_error, container, false)
     }
 
 

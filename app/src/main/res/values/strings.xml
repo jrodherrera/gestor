@@ -12,7 +12,7 @@
     <string name="title_second_screen">Inicia tus trámites</string>
     <string name="text_second_screen">envia los documentos,</string>
     <string name="title_third_screen">Comenzamos!</string>
-    <string name="text_third_screen">y consultarlas operaciones.</string>
+    <string name="text_third_screen">y consultar las operaciones.</string>
     <string name="password_login">Contraseña</string>
     <string name="login_user">Nombre de usuario</string>
     <string name="email">Correo electrónico</string>
@@ -39,7 +39,7 @@
     <string name="text_transfer">Transferencia de Vehículo</string>
     <string name="title_operations">TRAMITES</string>
     <string name="seller">Soy el vendededor.</string>
-    <string name="fill_in_seller">Rellena los campos del vendedor.</string>
+    <string name="fill_in_seller">Rellena los datos del vendendor.</string>
     <string name="fill_in_buyer">Rellena los datos del comprador.</string>
     <string name="title_transfer">TRANSFERENCIA</string>
     <string name="title_change_address">CAMBIO DOMICILIO</string>
@@ -59,12 +59,15 @@
     <string name="instructions">Un agente se pondrá en contacto para indicarle los siguientes pasos.</string>
     <string name="agree">Aceptar</string>
     <string name="text_terms" translatable="false">TÉRMINOS GENERALES DE USO DE MIGESTOR El acceso a los contenidos de las secciones de nuestra Web, se hará de acuerdo a la política que establezca la entidad. Asimismo MIGESTOR podrá modificar, en cualquier momento y sin previo aviso, la información contenida en el sitio Web, por lo que la entidad no se responsabiliza de que esa información esté actualizada.  RESPONSABILIDAD DE MIGESTOR Tanto el acceso a esta Web como el uso que pueda hacerse de la información contenida en el mismo es de la exclusiva responsabilidad de quien lo realiza.  MIGESTOR no responderá de ninguna consecuencia, daño o perjuicio que pudieran derivarse de dicho acceso o uso de la información. MIGESTOR no se hace responsable de los posibles errores de seguridad que se puedan producir ni de los posibles daños que puedan causarse al sistema informático del usuario (hardware y software), los ficheros o documentos almacenados en el mismo, como consecuencia de la presencia de virus en el ordenador del usuario utilizado para la conexión a los servicios y contenidos de la Web, de un mal funcionamiento del navegador o del uso de versiones no actualizadas del mismo.  Por tanto El usuario acepta, de forma expresa y sin reservas, que el acceso y la utilización del portal, se hace bajo su única y exclusiva responsabilidad.  En virtud de la Ley 34/2002 de 11 de julio de Servicios de la Sociedad de la Información y Comercio Electrónico, para cualquier controversia que pudiera surgir será de aplicación la legislación española. El usuario responderá, en cualquier caso, de la veracidad de los datos facilitados, reservándose MIGESTOR el derecho a excluir de los servicios registrados a todo usuario que haya facilitado datos falsos, sin prejuicio de las demás acciones que procedan en Derecho.  PROPIEDAD INTELECTUAL MIGESTOR es propietario y/o licenciatario, de toda la información contenida en este portal, de su diseño gráfico, imágenes, bases de datos, índices, códigos fuentes, marcas y logotipos, estando protegidos conforme a lo dispuesto en la Ley de Propiedad Intelectual, y, en la Ley de Marcas.  Su puesta a disposición y uso, no supone, en ningún caso, la cesión de su titularidad o la concesión de un derecho de uso a favor del Usuario, por lo que toda reproducción, copia, distribución total o parcial, o, comercialización, requerirá la autorización previa y escrita de MIGESTOR reservándose la entidad, en caso de uso indebido del Website, el derecho a ejercitar cuantas acciones legales fueran precisas para la restitución de los daños y perjuicios causados, asimismo el usuario se obliga a indemnizar a la entidad por cualquier daño o perjuicio que pudiera ocasionar por el uso de esta Web, infringiendo estas condiciones generales y/o la legalidad vigente.  LINKS, BANNERS La inclusión en el portal get-app.es de links o enlaces con otros portales, tiene una finalidad meramente informativa, y no supone que MIGESTOR recomiende y/o garantice dichos portales, sobre los que no ejerce control alguno, ni es responsable del contenido de los mismos.</string>
-    <string name="title_terms" translatable="false">TÉRMINOS DE USO</string>
+    <string name="title_terms">TÉRMINOS DE USO</string>
     <string name="terms_agree" translatable="false">Los términos de uso han sido aceptados.</string>
     <string name="chat">CHAT</string>
     <string name="settings">CONFIGURAR USUARIO</string>
     <string name="calling">LLAMAR AL GESTOR</string>
     <string name="office_number" translatable="false">555123456</string>
     <string name="empty_field">El campo no puede estar vacio.</string>
+    <string name="title_check_oper">CONSULTAS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
 
 </resources>

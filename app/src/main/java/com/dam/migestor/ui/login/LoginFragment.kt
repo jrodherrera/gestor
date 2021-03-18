@@ -9,10 +9,11 @@ import androidx.core.widget.addTextChangedListener
 import androidx.navigation.fragment.findNavController
 import com.dam.migestor.R
 import com.dam.migestor.databinding.FragmentLoginBinding
+import com.dam.migestor.ui.ShowMenuHomeNav
 import com.google.android.material.textfield.TextInputEditText
 import kotlinx.android.synthetic.main.fragment_login.view.*
 
-class LoginFragment : Fragment() {
+class LoginFragment : Fragment(){
 
 //Best practices: Recomendaciones google para optimizacion de memoria.
     private var binding: FragmentLoginBinding? = null
@@ -26,8 +27,6 @@ class LoginFragment : Fragment() {
         val tiluser = view.login_TIL_user_name
         val longMaxPassword = 8
 
-
-
         //limpiamos el errores
         tiepass.setOnFocusChangeListener { _, hasFocus ->
             if(hasFocus){
@@ -39,7 +38,6 @@ class LoginFragment : Fragment() {
                 tiluser.error = ""
             }
         }
-
 
         tiepass.setOnClickListener {
             val value = it as TextInputEditText
@@ -68,17 +66,12 @@ class LoginFragment : Fragment() {
             if(tiepass.text.isNullOrBlank()){
                 tilpass.error = getString(R.string.empty_password)
                 return@setOnClickListener
-            }else if(tieuser.text.isNullOrBlank()){
+            }
+            if(tieuser.text.isNullOrBlank()){
                 tiluser.error = getString(R.string.empty_username)
                 return@setOnClickListener
-            }else{
-                /////////////////////////////////////tras iniciar sesion////////////////////////////////////////////////
-                //val intent = Intent(this, HomeActivity::class.java)
-                //startActivity(intent, transition.toBundle())
-
-
-
             }
+            findNavController().navigate(R.id.action_loginFragment_to_bottom_home_nav)
         }
 
 //registro
@@ -102,11 +95,12 @@ class LoginFragment : Fragment() {
         return (view)
     }
 
-    //libera memoria
+//libera memoria
     override fun onDestroyView() {
         super.onDestroyView()
         binding=null
     }
+
 }
 
 

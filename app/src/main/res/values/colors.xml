@@ -13,7 +13,7 @@ nombres de variables adaptados al estandar
     <color name="color_secondary">#c6d4ec</color>
     <color name="color_secondary_variant">#95a3ba</color>
 
-    <color name="color_background">#fafafa</color>
+    <color name="color_background">@color/white</color>
     <color name="color_surface">#B2BFC5</color>
     <color name="color_error">#d50000</color>
     <color name="color_cancel">#FF8A80</color>

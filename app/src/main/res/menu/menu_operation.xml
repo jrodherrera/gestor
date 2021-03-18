@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/operationFragment"
+        android:icon="@drawable/ic_article"
+        android:title="@string/title_operations"/>
+
+    <item android:id="@+id/checkFragment"
+        android:icon="@drawable/ic_check"
+        android:title="@string/title_check_oper"/>
+</menu>

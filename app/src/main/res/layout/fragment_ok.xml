@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.OkDocActivity">
- <!-- Definicion de guias para adaptar elementos -->
+    tools:context=".ui.OkFragment">
+    <!-- Definicion de guias para adaptar elementos -->
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/ok_doc_V_guide10"
         android:layout_width="match_parent"
@@ -30,7 +30,7 @@
         android:layout_height="match_parent"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.9"/>
-<!--Pie -->
+    <!--Pie -->
     <ImageView
         android:id="@+id/ok_doc__IV_cars"
         android:layout_width="0dp"
@@ -39,7 +39,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-<!--Boton pagar -->
+    <!--Boton pagar -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/ok_doc_BTN_back"
         android:layout_width="0dp"
@@ -49,7 +49,7 @@
         app:layout_constraintBottom_toTopOf="@id/ok_doc_H_guide90"
         app:layout_constraintEnd_toStartOf="@+id/ok_doc_V_guide90"
         app:layout_constraintStart_toEndOf="@id/ok_doc_V_guide10" />
- <!--texto -->
+    <!--texto -->
     <TextView
         android:id="@+id/ok_doc_TV_txt"
         android:layout_width="wrap_content"
@@ -61,7 +61,7 @@
         app:layout_constraintBottom_toTopOf="@+id/ok_doc_BTN_back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-<!--titulo -->
+    <!--titulo -->
     <TextView
         android:id="@+id/ok_doc_TV_title"
         android:layout_width="wrap_content"
@@ -75,7 +75,7 @@
         app:layout_constraintBottom_toTopOf="@+id/ok_doc_TV_txt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-<!--icono ok-->
+    <!--icono ok-->
     <ImageView
         android:id="@+id/ok_doc_IV_iconerror"
         android:layout_width="wrap_content"
@@ -86,7 +86,7 @@
         app:layout_constraintEnd_toStartOf="@+id/ok_doc_V_guide90"
         app:layout_constraintStart_toStartOf="@+id/ok_doc_V_guide10"
         app:layout_constraintTop_toTopOf="@+id/operations_H_guide10" />
-<!--logo-->
+    <!--logo-->
     <ImageView
         android:id="@+id/ok_doc_IV_appicon"
         android:layout_width="wrap_content"

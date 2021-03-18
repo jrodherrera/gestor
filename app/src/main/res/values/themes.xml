@@ -7,6 +7,12 @@
         <item name="android:statusBarColor">@color/transparent</item>
         <item name="android:navigationBarColor">@color/transparent</item>
     </style>
+    <!-- navigation Bar color. -->
+    <style name="Base.MiGestor.NavBar">
+        <item name="android:statusBarColor">@color/color_secondary_variant</item>
+        <item name="android:navigationBarColor">@color/transparent</item>
+    </style>
+
 
 <!--Base application themeModificado segun standard de google-->
     <style name="Base.MiGestor" parent="Theme.Base.MaterialThemeBuilder">
