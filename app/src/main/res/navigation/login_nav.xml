@@ -53,6 +53,9 @@
             app:destination="@id/bottom_home_nav"
             app:popUpTo="@id/loginFragment"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_loginFragment_to_termsFragment"
+            app:destination="@id/termsFragment" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
@@ -69,4 +72,15 @@
             app:destination="@id/loginFragment" />
     </fragment>
     <include app:graph="@navigation/bottom_home_nav" />
+    <fragment
+        android:id="@+id/termsFragment"
+        android:name="com.dam.migestor.ui.terms.TermsFragment"
+        android:label="fragment_terms"
+        tools:layout="@layout/fragment_terms" >
+        <action
+            android:id="@+id/action_termsFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/termsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>

@@ -34,6 +34,20 @@
 
     <!--Best Practices: Creacion de elementos Down-up en Constrain Layout
         Creación de elementos Material Design-->
+
+    <!--terminos de uso-->
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:id="@+id/login_BTN_terms"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:textColor="@color/color_secondary_variant"
+        android:text="@string/title_terms"
+        app:layout_constraintBottom_toTopOf="@id/login_H_guide90"
+        app:layout_constraintStart_toEndOf="@id/login_V_guide10"
+        app:layout_constraintEnd_toStartOf="@id/login_V_guide90"/>
+
     <!--botón ovidaste la contraseña -->
     <com.google.android.material.button.MaterialButton
         style="@style/Widget.MaterialComponents.Button.TextButton"
@@ -42,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
         android:text="@string/password_forgot"
-        app:layout_constraintBottom_toTopOf="@id/login_H_guide90"
+        app:layout_constraintBottom_toTopOf="@id/login_BTN_terms"
         app:layout_constraintStart_toEndOf="@id/login_V_guide10"
         app:layout_constraintEnd_toStartOf="@id/login_V_guide90"/>
     <!--botón registrate -->

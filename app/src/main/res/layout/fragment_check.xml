@@ -1,15 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/abstract3_background"
     tools:context=".ui.CheckFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    
+    <!-- Definicion de guias para adaptar elementos -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/check_V_guide10"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textSize="25dp"
-        android:text="MUNDO" />
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/check_V_guide90"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/check_H_guide10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/check_H_guide90"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9"/>
+<!--info-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/check_FBT_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:transitionName="to_info"
+        android:src="@drawable/ic_info"
+        app:layout_constraintBottom_toTopOf="@+id/check_H_guide90"
+        app:layout_constraintStart_toStartOf="@+id/check_V_guide10" />
 
-</FrameLayout>
+    <!--Boton continuar -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/transfer_BTN_next"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="@string/go"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toTopOf="@id/check_H_guide90"
+        app:layout_constraintEnd_toStartOf="@id/check_V_guide90"
+        app:layout_constraintStart_toEndOf="@+id/check_FBT_info" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

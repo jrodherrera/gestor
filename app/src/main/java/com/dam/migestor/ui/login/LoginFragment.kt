@@ -9,7 +9,6 @@ import androidx.core.widget.addTextChangedListener
 import androidx.navigation.fragment.findNavController
 import com.dam.migestor.R
 import com.dam.migestor.databinding.FragmentLoginBinding
-import com.dam.migestor.ui.ShowMenuHomeNav
 import com.google.android.material.textfield.TextInputEditText
 import kotlinx.android.synthetic.main.fragment_login.view.*
 
@@ -77,20 +76,16 @@ class LoginFragment : Fragment(){
 //registro
         view.login_BTN_reg.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
-            // val intent = Intent(this, RegisterActivity::class.java)
-           // startActivity(intent, transition.toBundle())
         }
 //recordar contraseña
         view.login_BTN_forgot.setOnClickListener {
            findNavController().navigate(R.id.action_loginFragment_to_forgotPassFragment)
-             // val intent = Intent(this, ForgotPasswordActivity::class.java)
-            //startActivity(intent, transition.toBundle())
         }
 
-        /*para hacer transicion se mete como opcion en el intent
-        val intent = Intent(this, Activity2::Class.java)
-        startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle())
-*/
+//boton terminos de uso
+        view.login_BTN_terms.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_termsFragment)
+        }
 
         return (view)
     }

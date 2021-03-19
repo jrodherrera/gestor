@@ -2,8 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/info_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:transitionName="to_info"
     tools:context=".ui.instructions.InstructionFragment">
 
     <!-- Definicion de guias para adaptar elementos -->
@@ -31,53 +33,79 @@
         android:layout_height="match_parent"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.9"/>
-    <!--Pie -->
-    <ImageView
-        android:id="@+id/instruction_oper_IV_cars"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:src="@drawable/cars"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-    <!--Boton continuar -->
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/instruction_oper_BTN_next"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/go"
-        app:cornerRadius="12dp"
-        app:layout_constraintBottom_toTopOf="@id/instruction_oper_H_guide90"
-        app:layout_constraintStart_toEndOf="@id/instruction_oper_V_guide10"
-        app:layout_constraintEnd_toStartOf="@id/instruction_oper_V_guide90"/>
-    <!--Texto -->
+
+
+
+    <!--Texto consultas-->
     <TextView
-        android:id="@+id/instruction_oper_TV_about"
+        android:id="@+id/instruction_oper_TV_checktxt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:gravity="center"
-        android:text="@string/lorem"
+        android:text="@string/text_instructions_check"
         android:textColor="@color/color_primary_variant"
-        app:layout_constraintBottom_toTopOf="@+id/instruction_oper_BTN_next"
-        app:layout_constraintStart_toEndOf="@+id/instruction_oper_V_guide10"
-        app:layout_constraintEnd_toStartOf="@+id/instruction_oper_V_guide90"/>
-    <!--titulo -->
+        app:layout_constraintBottom_toTopOf="@+id/instruction_oper_H_guide90"
+        app:layout_constraintEnd_toStartOf="@+id/instruction_oper_V_guide90"
+        app:layout_constraintStart_toEndOf="@+id/instruction_oper_V_guide10" />
+
+<!--titulo consultas -->
+
+    <!--texto iniciar trámite -->
+
+
     <TextView
-        android:id="@+id/instruction_oper_TV_title"
-        android:layout_width="wrap_content"
+        android:id="@+id/instruction_oper_TV_checktitle"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/title_howto_start"
-        android:textColor="@color/color_primary_variant"
-        android:layout_marginBottom="30dp"
-        android:textSize="24dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/title_instructions_check"
         android:gravity="center"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/instruction_oper_TV_about"
+        android:textSize="20dp"
+        android:textColor="@color/color_primary_variant"
+        app:layout_constraintBottom_toTopOf="@+id/instruction_oper_TV_checktxt"
         app:layout_constraintEnd_toStartOf="@+id/instruction_oper_V_guide90"
-        app:layout_constraintStart_toEndOf="@+id/instruction_oper_V_guide10"
-        app:layout_constraintTop_toBottomOf="@+id/first_screen_IV" />
-    <!--logo -->
+        app:layout_constraintStart_toStartOf="@+id/instruction_oper_V_guide10" />
+
+    <TextView
+        android:id="@+id/instruction_oper_TV_optxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="@string/text_instructions_start"
+        android:textColor="@color/color_primary_variant"
+        app:layout_constraintBottom_toTopOf="@+id/instruction_oper_TV_checktitle"
+        app:layout_constraintEnd_toStartOf="@+id/instruction_oper_V_guide90"
+        app:layout_constraintStart_toStartOf="@+id/instruction_oper_V_guide10" />
+
+    <TextView
+        android:id="@+id/instruction_oper_TV_optitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="@string/title_instructions_start"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/color_primary_variant"
+        app:layout_constraintBottom_toTopOf="@+id/instruction_oper_TV_optxt"
+        app:layout_constraintEnd_toStartOf="@+id/instruction_oper_V_guide90"
+        app:layout_constraintStart_toStartOf="@+id/instruction_oper_V_guide10" />
+
+    <TextView
+        android:id="@+id/instruction_oper_TV_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:text="@string/title_instructions_uses"
+        android:textColor="@color/color_primary_variant"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/instruction_oper_TV_optitle"
+        app:layout_constraintEnd_toStartOf="@+id/instruction_oper_V_guide90"
+        app:layout_constraintHorizontal_bias="0.822"
+        app:layout_constraintStart_toEndOf="@+id/instruction_oper_V_guide10" />
+
     <ImageView
         android:id="@+id/instruction_oper_IV_appicon"
         android:layout_width="wrap_content"
@@ -86,6 +114,8 @@
         app:layout_constraintEnd_toStartOf="@+id/instruction_oper_V_guide90"
         app:layout_constraintStart_toStartOf="@+id/instruction_oper_V_guide10"
         app:layout_constraintTop_toTopOf="@+id/instruction_oper_H_guide10" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -58,7 +58,7 @@
         app:cornerRadius="12dp"
         app:layout_constraintBottom_toTopOf="@+id/terms_H_guide90"
         app:layout_constraintStart_toStartOf="@+id/terms_V_guide10" />
-    <!--Boton aceptar -->
+    <!--Boton volver -->
     <com.google.android.material.button.MaterialButton
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:id="@+id/terms_BTN_back"
@@ -106,7 +106,7 @@
                 android:padding="5dp"
                 android:text="@string/text_terms"
                 android:textColor="@color/color_primary"
-                android:textSize="10dp" />
+                android:textSize="14dp" />
         </LinearLayout>
     </ScrollView>
     <!--titulo -->

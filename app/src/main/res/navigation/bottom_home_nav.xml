@@ -11,32 +11,41 @@
         android:label="fragment_operation"
         tools:layout="@layout/fragment_operation" >
         <action
-            android:id="@+id/action_operationFragment_to_termsFragment"
-            app:destination="@id/termsFragment" />
-        <action
             android:id="@+id/action_operationFragment_to_transferFragment"
             app:destination="@id/transferFragment" />
+        <action
+            android:id="@+id/action_operationFragment_to_instructionFragment"
+            app:destination="@id/instructionFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/checkFragment"
         android:name="com.dam.migestor.ui.CheckFragment"
         android:label="fragment_check"
-        tools:layout="@layout/fragment_check" />
-    <fragment
-        android:id="@+id/termsFragment"
-        android:name="com.dam.migestor.ui.terms.TermsFragment"
-        android:label="fragment_terms"
-        tools:layout="@layout/fragment_terms" >
+        tools:layout="@layout/fragment_check" >
         <action
-            android:id="@+id/action_termsFragment_to_operationFragment"
-            app:destination="@id/operationFragment"
-            app:popUpTo="@id/termsFragment"
-            app:popUpToInclusive="true" />
+            android:id="@+id/action_checkFragment_to_instructionFragment"
+            app:destination="@id/instructionFragment" />
     </fragment>
     <fragment
         android:id="@+id/transferFragment"
         android:name="com.dam.migestor.ui.TransferFragment"
         android:label="fragment_transfer"
         tools:layout="@layout/fragment_transfer" />
+    <fragment
+        android:id="@+id/instructionFragment"
+        android:name="com.dam.migestor.ui.instructions.InstructionFragment"
+        android:label="fragment_instruction"
+        tools:layout="@layout/fragment_instruction" >
+        <action
+            android:id="@+id/action_instructionFragment_to_checkFragment"
+            app:destination="@id/checkFragment"
+            app:popUpTo="@id/instructionFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_instructionFragment_to_operationFragment"
+            app:destination="@id/operationFragment"
+            app:popUpTo="@id/instructionFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>

@@ -55,7 +55,7 @@ class TermsFragment : Fragment() {
 
 //boton volver
         view.terms_BTN_back.setOnClickListener{
-            findNavController().navigate(R.id.action_termsFragment_to_operationFragment)
+            findNavController().navigate(R.id.action_termsFragment_to_loginFragment)
         }
 
 
@@ -69,6 +69,12 @@ class TermsFragment : Fragment() {
         //oculta el 'bottom menu'. no será nulo
         listener!!.hideMenu()
 
+    }
+
+    //libera memoria
+    override fun onDestroyView() {
+        super.onDestroyView()
+        binding=null
     }
 
 

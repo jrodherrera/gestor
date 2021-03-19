@@ -58,7 +58,7 @@ class OperationFragment : Fragment() {
 
         }
         view.operations_FBT_terms.setOnClickListener {
-            findNavController().navigate(R.id.action_operationFragment_to_termsFragment)
+            findNavController().navigate(R.id.action_operationFragment_to_instructionFragment)
         }
 
 //muestra informacion de los botones flotantes

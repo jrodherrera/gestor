@@ -22,10 +22,9 @@
     <string name="back">Back</string>
     <string name="send">Send</string>
     <string name="write_email">Your e-mail</string>
-    <string name="operation_check">Checking operation</string>
-    <string name="operation_start">Starting operation</string>
+    <string name="title_instructions_check">Checking operation</string>
+    <string name="title_instructions_start">Starting operation</string>
     <string name="go">Continue</string>
-    <string name="title_howto_start">How to start a operation</string>
     <string name="characters">Characters: %1$d of %2$d</string>
     <string name="empty_password">Password can\\\'t be empty.</string>
     <string name="password_not_match">"The passwords do not match. "</string>
@@ -55,7 +54,7 @@
     <string name="thanks">Thanks!</string>
     <string name="payment">Payment</string>
     <string name="correct">OK!</string>
-    <string name="instructions">An agent will be in touch to advise you on the next steps.</string>
+    <string name="instructions_agent">An agent will be in touch to advise you on the next steps.</string>
     <string name="sms">You will receive an SMS for the digital signature of the mandate that authorizes us.</string>
     <string name="success">The operation was successful.</string>
     <string name="agree">Agree</string>
@@ -65,4 +64,5 @@
     <string name="empty_field">" This field must contain a value."</string>
     <string name="title_check_oper">CHECK OPERATIONS</string>
     <string name="title_terms">LEGAL TERMS</string>
+    <string name="title_instructions_uses">INSTRUCTIONS</string>
 </resources>
